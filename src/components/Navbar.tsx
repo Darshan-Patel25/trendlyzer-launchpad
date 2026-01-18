@@ -24,9 +24,8 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="Trendlyzer" className="h-20 w-auto" />
             <span className="text-2xl font-bold text-accent">
-              Trendlyzer
-              <div>
-                <small className="text-sm font-normal">Marketing Agency</small>
+              Trendlyzer<div>
+                <small>Marketing Agency</small>
               </div>
             </span>
           </Link>
