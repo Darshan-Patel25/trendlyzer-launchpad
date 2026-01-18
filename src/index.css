@@ -1,0 +1,181 @@
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 214 75% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 75% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 75% 25%;
+
+    --primary: 203 100% 74%;
+    --primary-foreground: 214 75% 20%;
+
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 214 75% 25%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 214 30% 45%;
+
+    --accent: 214 75% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 203 40% 85%;
+    --input: 203 40% 85%;
+    --ring: 203 100% 74%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --sky: 203 100% 74%;
+    --navy: 214 75% 25%;
+    --orange: 24 95% 53%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(203 100% 95%) 0%, hsl(203 100% 85%) 50%, hsl(210 50% 98%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(203 100% 74%) 0%, hsl(214 75% 40%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(203 50% 97%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -5px hsl(214 75% 25% / 0.1);
+    --shadow-card: 0 8px 30px -10px hsl(214 75% 25% / 0.15);
+    --shadow-glow: 0 0 40px hsl(203 100% 74% / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 214 75% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 214 75% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 214 75% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 203 100% 74%;
+    --primary-foreground: 214 75% 15%;
+
+    --secondary: 214 50% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 214 50% 18%;
+    --muted-foreground: 210 30% 70%;
+
+    --accent: 203 100% 74%;
+    --accent-foreground: 214 75% 15%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 50% 20%;
+    --input: 214 50% 20%;
+    --ring: 203 100% 74%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .wave-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2378C7FF' fill-opacity='0.1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+
+@layer components {
+  .btn-hero {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-full transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-hero-primary {
+    @apply btn-hero bg-accent text-accent-foreground hover:shadow-lg;
+  }
+
+  .btn-hero-secondary {
+    @apply btn-hero bg-secondary text-accent border-2 border-accent hover:bg-accent hover:text-secondary;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
