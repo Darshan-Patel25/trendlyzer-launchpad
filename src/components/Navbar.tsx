@@ -22,8 +22,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
+<<<<<<< HEAD
             <img src={logo} alt="Trendlyzer" className="h-20 w-auto" />
             <span className="text-2xl font-bold text-accent">Trendlyzer <div><small>marketing Agency</small></div></span>
+=======
+            <img src={logo} alt="Trendlyzer" className="h-10 w-auto" />
+            <span className="text-lg font-bold text-accent">Trendlyzer</span>
+>>>>>>> 78919c9ef99ef85b545d1a04d385c13dc5c6b76d
           </Link>
 
           {/* Desktop Navigation */}

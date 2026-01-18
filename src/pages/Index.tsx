@@ -13,9 +13,15 @@ const services = [
 ];
 
 const stats = [
+<<<<<<< HEAD
   { value: "10+", label: "Clients Served" },
   { value: "5+", label: "Campaigns Delivered" },
   { value: "1K+", label: "Reach Generated" },
+=======
+  { value: "100+", label: "Clients Served" },
+  { value: "500+", label: "Campaigns Delivered" },
+  { value: "2M+", label: "Reach Generated" },
+>>>>>>> 78919c9ef99ef85b545d1a04d385c13dc5c6b76d
   { value: "98%", label: "Client Satisfaction" },
 ];
 
@@ -41,7 +47,11 @@ const Index = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-accent text-sm font-medium mb-6">
+<<<<<<< HEAD
                 <Star className="w-4 h-4" /> Trusted by 10+ Businesses
+=======
+                <Star className="w-4 h-4" /> Trusted by 100+ Businesses
+>>>>>>> 78919c9ef99ef85b545d1a04d385c13dc5c6b76d
               </span>
             </motion.div>
             
@@ -51,7 +61,11 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
+<<<<<<< HEAD
               Grow Your Business with Trendlyzer Marketin Agency   🚀
+=======
+              Grow Your Business Online with Trendlyzer 🚀
+>>>>>>> 78919c9ef99ef85b545d1a04d385c13dc5c6b76d
             </motion.h1>
             
             <motion.p
