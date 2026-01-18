@@ -10,9 +10,11 @@ const values = [
 ];
 
 const teamStats = [
+
   { value: "100%", label: "View" },
   { value: "10+", label: "Happy Clients" },
   { value: "5+", label: "Projects Done" },
+
   { value: "24/7", label: "Support" },
 ];
 
@@ -178,18 +180,24 @@ const About = () => {
             >
               <div className="p-6 rounded-2xl bg-card shadow-card">
                 <Users className="w-10 h-10 text-primary mb-4" />
+
                 <h4 className="font-semibold text-accent text-lg">10+</h4>
+
                 <p className="text-sm text-muted-foreground">Happy Clients</p>
               </div>
               <div className="p-6 rounded-2xl bg-accent text-accent-foreground mt-8">
                 <TrendingUp className="w-10 h-10 text-primary mb-4" />
+
                 <h4 className="font-semibold text-lg">5+</h4>
+
                 <p className="text-sm text-accent-foreground/80">Campaigns</p>
               </div>
               <div className="p-6 rounded-2xl bg-primary/20">
                 <Award className="w-10 h-10 text-accent mb-4" />
+
                 <h4 className="font-semibold text-accent text-lg">100%</h4>
                 <p className="text-sm text-muted-foreground">Views Responsibility</p>
+
               </div>
               <div className="p-6 rounded-2xl bg-card shadow-card mt-8">
                 <Heart className="w-10 h-10 text-primary mb-4" />

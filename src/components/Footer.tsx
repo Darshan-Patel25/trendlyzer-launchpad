@@ -10,8 +10,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
+
               <img src={logo} alt="Trendlyzer" className="h-12 " />
               <span className="text-xl font-bold">Trendlyzer <div><small>Marketing Agency</small></div></span>
+
 
             </div>
             <p className="text-accent-foreground/80 text-sm leading-relaxed">
@@ -80,7 +82,9 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-accent-foreground/80">Email Us</p>
                   <a href="mailto:info@trendlyzer.com" className="font-medium hover:text-primary transition-colors">
+
                     trendlyzertech@gmail.com
+
                   </a>
                 </div>
               </li>
