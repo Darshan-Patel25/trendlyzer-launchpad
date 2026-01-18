@@ -35,7 +35,7 @@ const Contact = () => {
     setIsSubmitting(false);
   };
 
-  const whatsappUrl = "https://wa.me/918849243397?text=Hi!%20I%27m%20interested%20in%20your%20marketing%20services.";
+  const whatsappUrl = "https://wa.me/916353582586?text=Hi!%20I%27m%20interested%20in%20your%20marketing%20services.";
 
   return (
     <Layout>
@@ -77,8 +77,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Call Us</h4>
-                    <a href="tel:8849243397" className="text-muted-foreground hover:text-primary transition-colors">
-                      8849243397
+                    <a href="tel:6353582586" className="text-muted-foreground hover:text-primary transition-colors">
+                      6353 582 586
                     </a>
                   </div>
                 </div>

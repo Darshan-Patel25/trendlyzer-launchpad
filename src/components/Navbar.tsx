@@ -9,8 +9,6 @@ const navLinks = [
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Packages", path: "/packages" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Testimonials", path: "/testimonials" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -46,11 +44,11 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:8849243397"
+              href="tel:6353582586"
               className="flex items-center gap-2 text-sm font-medium text-accent"
             >
               <Phone className="w-4 h-4" />
-              8849243397
+              6353 582 586
             </a>
             <Link
               to="/contact"
@@ -94,11 +92,11 @@ const Navbar = () => {
               ))}
               <div className="pt-4 border-t border-border space-y-3">
                 <a
-                  href="tel:8849243397"
+                  href="tel:6353582586"
                   className="flex items-center gap-2 text-sm font-medium text-accent"
                 >
                   <Phone className="w-4 h-4" />
-                  8849243397
+                  6353 582 586
                 </a>
                 <Link
                   to="/contact"

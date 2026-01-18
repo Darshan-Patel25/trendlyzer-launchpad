@@ -224,7 +224,7 @@ const Index = () => {
                 View Packages
               </Link>
               <a
-                href="https://wa.me/918849243397?text=Hi!%20I%27m%20interested%20in%20your%20marketing%20services."
+                href="https://wa.me/916353582586?text=Hi!%20I%27m%20interested%20in%20your%20marketing%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-hero bg-[#25D366] text-white hover:bg-[#128C7E]"

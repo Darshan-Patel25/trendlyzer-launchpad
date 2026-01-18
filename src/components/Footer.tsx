@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Packages", "Portfolio", "Contact"].map((link) => (
+              {["Home", "About", "Services", "Packages", "Contact"].map((link) => (
                 <li key={link}>
                   <Link
                     to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
@@ -69,8 +69,8 @@ const Footer = () => {
                 <Phone className="w-5 h-5 mt-0.5 text-primary" />
                 <div>
                   <p className="text-sm text-accent-foreground/80">Call Us</p>
-                  <a href="tel:8849243397" className="font-medium hover:text-primary transition-colors">
-                    8849243397
+                  <a href="tel:6353582586" className="font-medium hover:text-primary transition-colors">
+                    6353 582 586
                   </a>
                 </div>
               </li>
