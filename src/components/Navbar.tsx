@@ -22,14 +22,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-
-            <img src={logo} alt="Trendlyzer" className="h-20 w-auto" />
-            <span className="text-2xl font-bold text-accent">
-              Trendlyzer<div>
-                <small>Marketing Agency</small>
-              </div>
-            </span>
-
+            <img src={logo} alt="Trendlyzer" className="h-10 w-auto" />
+            <span className="text-lg font-bold text-accent">Trendlyzer</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,11 +33,7 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
-
-                  location.pathname === link.path
-                    ? "text-primary"
-                    : "text-foreground"
-
+                  location.pathname === link.path ? "text-primary" : "text-foreground"
                 }`}
               >
                 {link.name}
@@ -60,9 +50,10 @@ const Navbar = () => {
               <Phone className="w-4 h-4" />
               6353 582 586
             </a>
-
-            <Link to="/contact" className="btn-hero-primary text-sm py-2 px-6">
-
+            <Link
+              to="/contact"
+              className="btn-hero-primary text-sm py-2 px-6"
+            >
               Get a Quote
             </Link>
           </div>
@@ -93,19 +84,12 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsOpen(false)}
                   className={`block text-base font-medium transition-colors hover:text-primary ${
-
-                    location.pathname === link.path
-                      ? "text-primary"
-                      : "text-foreground"
-
+                    location.pathname === link.path ? "text-primary" : "text-foreground"
                   }`}
                 >
                   {link.name}
                 </Link>
               ))}
-
-
-
               <div className="pt-4 border-t border-border space-y-3">
                 <a
                   href="tel:6353582586"

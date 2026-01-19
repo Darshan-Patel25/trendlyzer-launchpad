@@ -10,11 +10,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-
-              <img src={logo} alt="Trendlyzer" className="h-12 " />
-              <span className="text-xl font-bold">Trendlyzer <div><small>Marketing Agency</small></div></span>
-
-
+              <img src={logo} alt="Trendlyzer" className="h-12 w-auto brightness-0 invert" />
+              <span className="text-xl font-bold">Trendlyzer</span>
             </div>
             <p className="text-accent-foreground/80 text-sm leading-relaxed">
               We build digital presence that attracts customers, builds trust, and drives results.
@@ -82,9 +79,7 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-accent-foreground/80">Email Us</p>
                   <a href="mailto:info@trendlyzer.com" className="font-medium hover:text-primary transition-colors">
-
-                    trendlyzertech@gmail.com
-
+                    info@trendlyzer.com
                   </a>
                 </div>
               </li>
